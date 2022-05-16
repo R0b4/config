@@ -30,7 +30,7 @@ colors.white = "#fafafa"
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/mytheme"
 --theme.wallpaper                                 = theme.dir .. "/starwars.jpg"
-theme.font                                      = "Fira Code Nerd Font 9"
+theme.font                                      = "FiraCode Nerd Font 5"
 theme.taglist_font                              = theme.font
 theme.fg_normal                                 = colors.fg
 theme.fg_focus                                  = "#A77AC4"
@@ -214,7 +214,7 @@ function theme.at_screen_connect(s)
     --s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = 25, bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 25, bg = theme.bg_normal .. "0", fg = theme.fg_normal })
 
     local ca = colors.green
     local cb = colors.blue
@@ -231,10 +231,8 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
 
-            wibox.container.constraint(theme.volume.widget, "exact", 60, 20),
             wibox.container.constraint(mem.widget, "exact", 70, 20),
             wibox.container.constraint(cpu.widget, "exact", 60, 20),
-            wibox.container.constraint(mybattery, "exact", 60, 20),
             wibox.container.constraint(net.widget, "exact", 120, 20),
             wibox.container.constraint(clock, "exact", 140, 20)
 

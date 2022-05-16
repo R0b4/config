@@ -1,1 +1,1 @@
-from configs.base import *
+from configs.nobar import *

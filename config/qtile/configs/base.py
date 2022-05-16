@@ -11,7 +11,7 @@ from libqtile import hook
 import os
 import subprocess
 
-from colors.blackqtile import *
+from colors.ayuqtile import *
 
 # Some quick settings
 mod = "mod4"

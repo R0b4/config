@@ -1,4 +1,4 @@
-# Colors
+#Colors
 background_light = ["#07070700", "#07070700"]
 background_dark = ["#07070700", "#07070700"]
 foreground = ["#CCCAC2", "#CCCAC2"]

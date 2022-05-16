@@ -3,7 +3,7 @@
 colors:
   # Default colors
   primary:
-    background: '#242936'
+    background: '#1F2430'
     foreground: '#cbccc6'
     bright_foreground: '#f28779'
 
@@ -46,7 +46,7 @@ font:
     family: FiraCode Nerd Font
     style: Bold Italic
 
-  size: 8
+  size: 10
 
 window:
     opacity: 0.8

@@ -35,5 +35,10 @@ if status is-interactive
     alias yayu='yay -Syu --sudoloop'
     alias yayc='yay -c --sudoloop'
 
+    alias parus='paru -Sv --needed --sudoloop'
+    alias parur='paru -Rcns --sudoloop'
+    alias paruu='paru -Syu --sudoloop'
+    alias paruc='paru -c --sudoloop'
+
     set fish_greeting
 end
